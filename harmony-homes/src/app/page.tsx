@@ -1,10 +1,10 @@
 import KeyFeatures from "@/components/key-features";
-import Image from "next/image";
+import Header from "@/components/Navbar/Navbar";
 
 export default function Home() {
   return (
     <div>
-      Home
+      <Header />
       <KeyFeatures />
     </div>
   );
