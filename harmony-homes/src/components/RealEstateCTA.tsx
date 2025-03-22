@@ -21,9 +21,9 @@ const RealEstateCTA = () => {
         </div>
       </div>
       <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-        <div className="bg-gray-300 w-full h-56 flex items-center justify-center rounded-lg">
+        <div className="bg-gray-300 w-full flex items-center justify-center rounded-lg">
           <Image
-            src="/binance.png"
+            src="/placeholder.png"
             width={700}
             height={700}
             alt=""
