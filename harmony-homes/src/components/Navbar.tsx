@@ -9,13 +9,13 @@ const Navbar: React.FC = () => {
        
         <Link
           href="/login"
-          className="px-4 py-2 border border-gray-300 bg-background text-foreground dark:text-#0a0a0a  dark:bg-foreground rounded-[6px]  "
+          className="px-4 py-2 border border-gray-300 bg-[#ffffff] text-[#171717] dark:text-[#0a0a0a]  dark:bg-[#ededed] rounded-[6px]  "
         >
           Log in
         </Link>
         <Link
           href="/signup"
-          className="px-4 py-2  bg-foreground dark:text-foreground dark:bg-#0a0a0a text-background rounded-[6px] "
+          className="px-4 py-2  bg-[#171717] dark:text-[#ededed] dark:bg-[#0a0a0a] text-[#ededed] rounded-[6px] "
         >
           Sign up
         </Link>
