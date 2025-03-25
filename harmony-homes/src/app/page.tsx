@@ -4,21 +4,21 @@ import Header from "@/components/Navbar/Navbar";
 
 import KeyFeatures from "@/components/key-features";
 import RealEstateCTA from "@/components/RealEstateCTA";
-import Image from "next/image";
 
 import Hero from "./components/Hero";
 
-import Header from "@/components/Navbar/Navbar";
+
 
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-[#191970] " >
 
-      Home
-            <Hero />
+
+
 
       <Header />
+      <Hero />
       <HowItWorks />
 
       <KeyFeatures />
