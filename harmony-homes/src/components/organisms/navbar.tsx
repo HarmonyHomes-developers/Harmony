@@ -3,14 +3,11 @@
 import { X, Menu } from "lucide-react";
 import React, { useState } from 'react';
 import Image from 'next/image';
-import NavLink from './NavLink';
-
-
+import NavLink from '../atoms/navLink';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -38,8 +35,6 @@ const Header = () => {
                 </button>
           </div>
           </div>
-
-        
 
           {/* Mobile Menu Button */}
           <button className="md:hidden p-2 ml-auto" onClick={toggleMenu}>
