@@ -1,11 +1,10 @@
 
-import HowItWorks from "@/components/HowItWorks";
-import Header from "@/components/Navbar/Navbar";
-
-import KeyFeatures from "@/components/key-features";
-import RealEstateCTA from "@/components/RealEstateCTA";
-import Hero from "./components/Hero";
+import Header from "@/components/organisms/navbar";
+import KeyFeatures from "@/components/organisms/key-features";
 import Image from "next/image";
+import RealEstateCTA from "@/components/molecules/realEstateCTA";
+import Hero from "../components/molecules/hero";
+import HowItWorks from "@/components/organisms/howItWorks";
 
 export default function Home() {
   return (
