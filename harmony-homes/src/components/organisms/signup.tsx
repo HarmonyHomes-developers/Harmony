@@ -2,9 +2,11 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { Building } from "lucide-react";
 
 export default function Signup() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -14,6 +16,8 @@ export default function Signup() {
     role: 'buyer',
     terms: false,
   });
+
+  const [error, setError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value, type, checked } = e.target;
@@ -25,8 +29,20 @@ export default function Signup() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    // Validate password match
+    if (formData.password !== formData.confirmPassword) {
+      setError('Passwords do not match');
+      return;
+    }
+    if (!formData.terms) {
+      setError('You must agree to the Terms of Service and Privacy Policy');
+      return;
+    }
     // Handle form submission logic here
+    setError('');
     console.log(formData);
+    // Redirect to home page on successful signup
+    router.push('/');
   };
 
   return (
@@ -87,7 +103,9 @@ export default function Signup() {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              className="border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className={`border rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 ${
+                error === 'Passwords do not match' ? 'border-red-600' : 'border-gray-300'
+              }`}
               required
             />
           </div>
@@ -99,10 +117,13 @@ export default function Signup() {
               name="confirmPassword"
               value={formData.confirmPassword}
               onChange={handleChange}
-              className="border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className={`border rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 ${
+                error === 'Passwords do not match' ? 'border-red-600' : 'border-gray-300'
+              }`}
               required
             />
           </div>
+          {error && <p className="text-red-600 text-xs mb-4">{error}</p>}
           <fieldset className="mb-4">
             <legend className="text-sm mb-2 font-normal">I am a:</legend>
             <div className="flex flex-col space-y-1 text-sm">
