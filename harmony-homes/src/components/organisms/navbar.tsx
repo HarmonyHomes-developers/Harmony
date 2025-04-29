@@ -4,6 +4,7 @@ import { X, Menu } from "lucide-react";
 import React, { useState } from 'react';
 import Image from 'next/image';
 import NavLink from '../atoms/navLink';
+import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,12 +28,16 @@ const Header = () => {
             <NavLink href='/about'> About</NavLink>
             <NavLink href='/contact'>Contact</NavLink>
             <div className="hidden md:flex text-black space-x-4">
-                <button className='border border-[#E4E4E7] px-3 py-2 rounded-sm hover:opacity-80'>
-                Log In
-                </button>
-                <button className='bg-black text-white px-3 py-2 rounded-sm hover:opacity-80'>
-                Sign Up
-                </button>
+                <Link href="/signin">
+                  <button className='border border-[#E4E4E7] px-3 py-2 rounded-sm hover:opacity-80'>
+                    Log In
+                  </button>
+                </Link>
+                <Link href="/signup">
+                  <button className='bg-black text-white px-3 py-2 rounded-sm hover:opacity-80'>
+                    Sign Up
+                  </button>
+                </Link>
           </div>
           </div>
 
@@ -47,18 +52,22 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        {isMenuOpen && (
+          {isMenuOpen && (
           <div className="md:hidden mt-4 flex flex-col space-y-4">
             <NavLink href='/'>Properties</NavLink>
             <NavLink href='/about'> About</NavLink>
             <NavLink href='/contact'>Contact</NavLink>
             <div className="text-black space-y-4 flex flex-col">
-                <button className='border border-[#E4E4E7] px-3 py-2 rounded-sm hover:opacity-80'>
-                Log In
-                </button>
-                <button className='bg-black text-white px-3 py-2 rounded-sm hover:opacity-80'>
-                Sign Up
-                </button>
+                <Link href="/signin">
+                  <button className='border border-[#E4E4E7] px-3 py-2 rounded-sm hover:opacity-80'>
+                    Log In
+                  </button>
+                </Link>
+                <Link href="/signup">
+                  <button className='bg-black text-white px-3 py-2 rounded-sm hover:opacity-80'>
+                    Sign Up
+                  </button>
+                </Link>
           </div>
           </div>
         )}
