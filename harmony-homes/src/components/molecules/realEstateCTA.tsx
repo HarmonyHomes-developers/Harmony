@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const RealEstateCTA = () => {
   return (
@@ -12,9 +13,11 @@ const RealEstateCTA = () => {
           properties with blockchain technology.
         </p>
         <div className="flex justify-center md:justify-start gap-4">
-          <button className="bg-[#18181B] text-[#FAFAFA] py-2 px-6 rounded-lg font-medium">
-            Get Started
-          </button>
+          <Link href="/signup">
+            <button className="bg-[#18181B] text-[#FAFAFA] py-2 px-6 rounded-lg font-medium">
+              Get Started
+            </button>
+          </Link>
           <button className="border border-[#E4E4E7] text-gray-900 py-2 px-6 rounded-lg font-medium">
             Contact Us
           </button>
