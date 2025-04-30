@@ -24,7 +24,7 @@ const Header = () => {
 
           {/* Navigation Links - Desktop */}
           <div className="hidden ml-auto md:flex space-x-6 items-center justify-center px-2">
-            <NavLink href='/'>Properties</NavLink>
+            <NavLink href='/catalogue'>Catalogue</NavLink>
             <NavLink href='/about'> About</NavLink>
             <NavLink href='/contact'>Contact</NavLink>
             <div className="hidden md:flex text-black space-x-4">
