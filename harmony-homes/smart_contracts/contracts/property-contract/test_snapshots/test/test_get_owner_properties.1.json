@@ -1,0 +1,1164 @@
+{
+  "generators": {
+    "address": 3,
+    "nonce": 0
+  },
+  "auth": [
+    [],
+    [
+      [
+        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+        {
+          "function": {
+            "contract_fn": {
+              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+              "function_name": "register_property",
+              "args": [
+                {
+                  "string": "OWNER1_PROP1"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "map": [
+                    {
+                      "key": {
+                        "symbol": "address"
+                      },
+                      "val": {
+                        "string": "123 Main St"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "city"
+                      },
+                      "val": {
+                        "string": "New York"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "country"
+                      },
+                      "val": {
+                        "string": "USA"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "latitude"
+                      },
+                      "val": "void"
+                    },
+                    {
+                      "key": {
+                        "symbol": "longitude"
+                      },
+                      "val": "void"
+                    },
+                    {
+                      "key": {
+                        "symbol": "postal_code"
+                      },
+                      "val": {
+                        "string": "10001"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "state"
+                      },
+                      "val": {
+                        "string": "NY"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "map": [
+                    {
+                      "key": {
+                        "symbol": "bathrooms"
+                      },
+                      "val": {
+                        "u32": 2
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "bedrooms"
+                      },
+                      "val": {
+                        "u32": 3
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "features"
+                      },
+                      "val": {
+                        "vec": []
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "property_type"
+                      },
+                      "val": {
+                        "string": "apartment"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "size"
+                      },
+                      "val": {
+                        "i128": {
+                          "hi": 0,
+                          "lo": 1500
+                        }
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "year_built"
+                      },
+                      "val": {
+                        "u32": 2010
+                      }
+                    }
+                  ]
+                },
+                {
+                  "string": "active"
+                },
+                {
+                  "i128": {
+                    "hi": 0,
+                    "lo": 250000000000
+                  }
+                }
+              ]
+            }
+          },
+          "sub_invocations": []
+        }
+      ]
+    ],
+    [
+      [
+        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+        {
+          "function": {
+            "contract_fn": {
+              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+              "function_name": "register_property",
+              "args": [
+                {
+                  "string": "OWNER1_PROP2"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "map": [
+                    {
+                      "key": {
+                        "symbol": "address"
+                      },
+                      "val": {
+                        "string": "123 Main St"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "city"
+                      },
+                      "val": {
+                        "string": "New York"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "country"
+                      },
+                      "val": {
+                        "string": "USA"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "latitude"
+                      },
+                      "val": "void"
+                    },
+                    {
+                      "key": {
+                        "symbol": "longitude"
+                      },
+                      "val": "void"
+                    },
+                    {
+                      "key": {
+                        "symbol": "postal_code"
+                      },
+                      "val": {
+                        "string": "10001"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "state"
+                      },
+                      "val": {
+                        "string": "NY"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "map": [
+                    {
+                      "key": {
+                        "symbol": "bathrooms"
+                      },
+                      "val": {
+                        "u32": 2
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "bedrooms"
+                      },
+                      "val": {
+                        "u32": 3
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "features"
+                      },
+                      "val": {
+                        "vec": []
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "property_type"
+                      },
+                      "val": {
+                        "string": "apartment"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "size"
+                      },
+                      "val": {
+                        "i128": {
+                          "hi": 0,
+                          "lo": 1500
+                        }
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "year_built"
+                      },
+                      "val": {
+                        "u32": 2010
+                      }
+                    }
+                  ]
+                },
+                {
+                  "string": "active"
+                },
+                {
+                  "i128": {
+                    "hi": 0,
+                    "lo": 300000000000
+                  }
+                }
+              ]
+            }
+          },
+          "sub_invocations": []
+        }
+      ]
+    ],
+    [
+      [
+        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
+        {
+          "function": {
+            "contract_fn": {
+              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+              "function_name": "register_property",
+              "args": [
+                {
+                  "string": "OWNER2_PROP1"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                },
+                {
+                  "map": [
+                    {
+                      "key": {
+                        "symbol": "address"
+                      },
+                      "val": {
+                        "string": "123 Main St"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "city"
+                      },
+                      "val": {
+                        "string": "New York"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "country"
+                      },
+                      "val": {
+                        "string": "USA"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "latitude"
+                      },
+                      "val": "void"
+                    },
+                    {
+                      "key": {
+                        "symbol": "longitude"
+                      },
+                      "val": "void"
+                    },
+                    {
+                      "key": {
+                        "symbol": "postal_code"
+                      },
+                      "val": {
+                        "string": "10001"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "state"
+                      },
+                      "val": {
+                        "string": "NY"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "map": [
+                    {
+                      "key": {
+                        "symbol": "bathrooms"
+                      },
+                      "val": {
+                        "u32": 2
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "bedrooms"
+                      },
+                      "val": {
+                        "u32": 3
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "features"
+                      },
+                      "val": {
+                        "vec": []
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "property_type"
+                      },
+                      "val": {
+                        "string": "apartment"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "size"
+                      },
+                      "val": {
+                        "i128": {
+                          "hi": 0,
+                          "lo": 1500
+                        }
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "year_built"
+                      },
+                      "val": {
+                        "u32": 2010
+                      }
+                    }
+                  ]
+                },
+                {
+                  "string": "active"
+                },
+                {
+                  "i128": {
+                    "hi": 0,
+                    "lo": 275000000000
+                  }
+                }
+              ]
+            }
+          },
+          "sub_invocations": []
+        }
+      ]
+    ],
+    [],
+    []
+  ],
+  "ledger": {
+    "protocol_version": 22,
+    "sequence_number": 0,
+    "timestamp": 0,
+    "network_id": "0000000000000000000000000000000000000000000000000000000000000000",
+    "base_reserve": 0,
+    "min_persistent_entry_ttl": 4096,
+    "min_temp_entry_ttl": 16,
+    "max_entry_ttl": 6312000,
+    "ledger_entries": [
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+            "key": "ledger_key_contract_instance",
+            "durability": "persistent"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+                "key": "ledger_key_contract_instance",
+                "durability": "persistent",
+                "val": {
+                  "contract_instance": {
+                    "executable": {
+                      "wasm": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                    },
+                    "storage": [
+                      {
+                        "key": {
+                          "string": "OWNER1_PROP1"
+                        },
+                        "val": {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "details"
+                              },
+                              "val": {
+                                "map": [
+                                  {
+                                    "key": {
+                                      "symbol": "bathrooms"
+                                    },
+                                    "val": {
+                                      "u32": 2
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "bedrooms"
+                                    },
+                                    "val": {
+                                      "u32": 3
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "features"
+                                    },
+                                    "val": {
+                                      "vec": []
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "property_type"
+                                    },
+                                    "val": {
+                                      "string": "apartment"
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "size"
+                                    },
+                                    "val": {
+                                      "i128": {
+                                        "hi": 0,
+                                        "lo": 1500
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "year_built"
+                                    },
+                                    "val": {
+                                      "u32": 2010
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "location"
+                              },
+                              "val": {
+                                "map": [
+                                  {
+                                    "key": {
+                                      "symbol": "address"
+                                    },
+                                    "val": {
+                                      "string": "123 Main St"
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "city"
+                                    },
+                                    "val": {
+                                      "string": "New York"
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "country"
+                                    },
+                                    "val": {
+                                      "string": "USA"
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "latitude"
+                                    },
+                                    "val": "void"
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "longitude"
+                                    },
+                                    "val": "void"
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "postal_code"
+                                    },
+                                    "val": {
+                                      "string": "10001"
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "state"
+                                    },
+                                    "val": {
+                                      "string": "NY"
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "owner"
+                              },
+                              "val": {
+                                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "price"
+                              },
+                              "val": {
+                                "i128": {
+                                  "hi": 0,
+                                  "lo": 250000000000
+                                }
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "property_id"
+                              },
+                              "val": {
+                                "string": "OWNER1_PROP1"
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "status"
+                              },
+                              "val": {
+                                "string": "active"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "key": {
+                          "string": "OWNER1_PROP2"
+                        },
+                        "val": {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "details"
+                              },
+                              "val": {
+                                "map": [
+                                  {
+                                    "key": {
+                                      "symbol": "bathrooms"
+                                    },
+                                    "val": {
+                                      "u32": 2
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "bedrooms"
+                                    },
+                                    "val": {
+                                      "u32": 3
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "features"
+                                    },
+                                    "val": {
+                                      "vec": []
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "property_type"
+                                    },
+                                    "val": {
+                                      "string": "apartment"
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "size"
+                                    },
+                                    "val": {
+                                      "i128": {
+                                        "hi": 0,
+                                        "lo": 1500
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "year_built"
+                                    },
+                                    "val": {
+                                      "u32": 2010
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "location"
+                              },
+                              "val": {
+                                "map": [
+                                  {
+                                    "key": {
+                                      "symbol": "address"
+                                    },
+                                    "val": {
+                                      "string": "123 Main St"
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "city"
+                                    },
+                                    "val": {
+                                      "string": "New York"
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "country"
+                                    },
+                                    "val": {
+                                      "string": "USA"
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "latitude"
+                                    },
+                                    "val": "void"
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "longitude"
+                                    },
+                                    "val": "void"
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "postal_code"
+                                    },
+                                    "val": {
+                                      "string": "10001"
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "state"
+                                    },
+                                    "val": {
+                                      "string": "NY"
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "owner"
+                              },
+                              "val": {
+                                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "price"
+                              },
+                              "val": {
+                                "i128": {
+                                  "hi": 0,
+                                  "lo": 300000000000
+                                }
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "property_id"
+                              },
+                              "val": {
+                                "string": "OWNER1_PROP2"
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "status"
+                              },
+                              "val": {
+                                "string": "active"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "key": {
+                          "string": "OWNER2_PROP1"
+                        },
+                        "val": {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "details"
+                              },
+                              "val": {
+                                "map": [
+                                  {
+                                    "key": {
+                                      "symbol": "bathrooms"
+                                    },
+                                    "val": {
+                                      "u32": 2
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "bedrooms"
+                                    },
+                                    "val": {
+                                      "u32": 3
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "features"
+                                    },
+                                    "val": {
+                                      "vec": []
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "property_type"
+                                    },
+                                    "val": {
+                                      "string": "apartment"
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "size"
+                                    },
+                                    "val": {
+                                      "i128": {
+                                        "hi": 0,
+                                        "lo": 1500
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "year_built"
+                                    },
+                                    "val": {
+                                      "u32": 2010
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "location"
+                              },
+                              "val": {
+                                "map": [
+                                  {
+                                    "key": {
+                                      "symbol": "address"
+                                    },
+                                    "val": {
+                                      "string": "123 Main St"
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "city"
+                                    },
+                                    "val": {
+                                      "string": "New York"
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "country"
+                                    },
+                                    "val": {
+                                      "string": "USA"
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "latitude"
+                                    },
+                                    "val": "void"
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "longitude"
+                                    },
+                                    "val": "void"
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "postal_code"
+                                    },
+                                    "val": {
+                                      "string": "10001"
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "state"
+                                    },
+                                    "val": {
+                                      "string": "NY"
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "owner"
+                              },
+                              "val": {
+                                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "price"
+                              },
+                              "val": {
+                                "i128": {
+                                  "hi": 0,
+                                  "lo": 275000000000
+                                }
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "property_id"
+                              },
+                              "val": {
+                                "string": "OWNER2_PROP1"
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "status"
+                              },
+                              "val": {
+                                "string": "active"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "OwnerProperties"
+                            },
+                            {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "vec": [
+                            {
+                              "string": "OWNER1_PROP1"
+                            },
+                            {
+                              "string": "OWNER1_PROP2"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "OwnerProperties"
+                            },
+                            {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "vec": [
+                            {
+                              "string": "OWNER2_PROP1"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "StatusProperties"
+                            },
+                            {
+                              "string": "active"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "vec": [
+                            {
+                              "string": "OWNER1_PROP1"
+                            },
+                            {
+                              "string": "OWNER1_PROP2"
+                            },
+                            {
+                              "string": "OWNER2_PROP1"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "ext": "v0"
+          },
+          4095
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+            "key": {
+              "ledger_key_nonce": {
+                "nonce": 801925984706572462
+              }
+            },
+            "durability": "temporary"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+                "key": {
+                  "ledger_key_nonce": {
+                    "nonce": 801925984706572462
+                  }
+                },
+                "durability": "temporary",
+                "val": "void"
+              }
+            },
+            "ext": "v0"
+          },
+          6311999
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+            "key": {
+              "ledger_key_nonce": {
+                "nonce": 5541220902715666415
+              }
+            },
+            "durability": "temporary"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+                "key": {
+                  "ledger_key_nonce": {
+                    "nonce": 5541220902715666415
+                  }
+                },
+                "durability": "temporary",
+                "val": "void"
+              }
+            },
+            "ext": "v0"
+          },
+          6311999
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
+            "key": {
+              "ledger_key_nonce": {
+                "nonce": 1033654523790656264
+              }
+            },
+            "durability": "temporary"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
+                "key": {
+                  "ledger_key_nonce": {
+                    "nonce": 1033654523790656264
+                  }
+                },
+                "durability": "temporary",
+                "val": "void"
+              }
+            },
+            "ext": "v0"
+          },
+          6311999
+        ]
+      ],
+      [
+        {
+          "contract_code": {
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_code": {
+                "ext": "v0",
+                "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "code": ""
+              }
+            },
+            "ext": "v0"
+          },
+          4095
+        ]
+      ]
+    ]
+  },
+  "events": []
+}
