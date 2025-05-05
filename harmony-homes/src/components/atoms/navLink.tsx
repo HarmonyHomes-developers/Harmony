@@ -8,8 +8,8 @@ const NavLink = ({ href, children }: { href: string; children: React.ReactNode }
   return (
     <Link
       href={href}
-      className={`transition-colors hover:text-gray-500 ${
-        isActive ? "text-black" : "text-gray-500"
+      className={`transition-colors hover:text-muted-foreground ${
+        isActive ? "text-foreground font-medium" : "text-muted-foreground"
       }`}
     >
       {children}

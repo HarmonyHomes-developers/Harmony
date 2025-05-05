@@ -1,200 +1,171 @@
 "use client";
 
-import { Mail, MapPin, Phone } from "lucide-react";
-import { useState } from "react";
+import React, { useState } from 'react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
-export default function ContactPage() {
+export default function Contact() {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
+    name: '',
+    email: '',
+    message: ''
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    // TODO: Implement form submission logic
+    console.log(formData);
   };
 
   return (
-    <div className="max-w-6xl mx-auto bg-white px-6 py-12">
-      <h1 className="text-4xl font-bold text-center mb-2">Contact Us</h1>
-      <p className="text-[#71717A] text-center mb-8">Have questions about Harmony? We&apos;re here to help.</p>
+    <div className="min-h-screen bg-background text-foreground py-16">
+      <div className="container mx-auto px-4">
+        <div className="max-w-6xl mx-auto bg-background px-6 py-12">
+          <h1 className="text-4xl font-bold text-center mb-4">Contact Harmony</h1>
+          <p className="text-muted-foreground text-center mb-8">
+            Have questions about Harmony? We're here to help.
+          </p>
 
-      <div className="grid md:grid-cols-2 gap-6">
-        {/* Left: Contact Form */}
-        <div className="bg-white p-6 rounded-lg shadow">
-          <h2 className="text-xl font-semibold mb-4">Send us a message</h2>
-          <p className="text-[#71717A]">Fill out the form below and we&apos;ll get back to you as soon as possible.</p>
-          <form onSubmit={handleSubmit} className="space-y-4 text-[#09090B] mt-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label className="block my-2">Full Name</label>
-                <input
-                    type="text"
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Contact Form */}
+            <div className="bg-secondary p-6 rounded-lg shadow">
+              <h2 className="text-2xl font-semibold mb-4">Send Us a Message</h2>
+              <p className="text-muted-foreground mb-6">
+                Fill out the form below and we'll get back to you as soon as possible.
+              </p>
+
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label htmlFor="name" className="block mb-2 text-sm">Name</label>
+                  <input 
+                    type="text" 
+                    id="name" 
                     name="name"
-                    placeholder="John Doe"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full p-2 px-3 border border-[#E4E4E7] rounded-md"
-                    required
-                />
-              </div>
-              <div>
-                <label className="block my-2">Email</label>
-                <input
-                    type="email"
+                    className="w-full p-2 border border-border rounded bg-background text-foreground"
+                    required 
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="email" className="block mb-2 text-sm">Email</label>
+                  <input 
+                    type="email" 
+                    id="email" 
                     name="email"
-                    placeholder="john@example.com"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full p-2 px-3 border border-[#E4E4E7] rounded-md"
-                    required
-                />
+                    className="w-full p-2 border border-border rounded bg-background text-foreground"
+                    required 
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block mb-2 text-sm">Message</label>
+                  <textarea 
+                    id="message" 
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows={4}
+                    className="w-full p-2 border border-border rounded bg-background text-foreground"
+                    required 
+                  />
+                </div>
+
+                <button 
+                  type="submit" 
+                  className="w-full bg-primary text-white p-3 rounded-md hover:bg-primary-hover transition-colors"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            {/* Contact Information */}
+            <div className="bg-secondary p-6 rounded-lg shadow">
+              <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
+              <p className="text-muted-foreground mb-6">
+                Reach out to us through any of these channels
+              </p>
+
+              <div className="space-y-6">
+                {/* Email Contact */}
+                <div className="flex items-center space-x-4">
+                  <div className="p-2 rounded-full bg-background w-fit h-fit">
+                    <Mail className="text-foreground" />
+                  </div>
+                  <div>
+                    <p className="font-bold text-foreground">Email</p>
+                    <p className="text-muted-foreground">support@harmonyhomes.com</p>
+                  </div>
+                </div>
+
+                {/* Phone Contact */}
+                <div className="flex items-center space-x-4">
+                  <div className="p-2 rounded-full bg-background w-fit h-fit">
+                    <Phone className="text-foreground" />
+                  </div>
+                  <div>
+                    <p className="font-bold text-foreground">Phone</p>
+                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  </div>
+                </div>
+
+                {/* Address */}
+                <div className="flex items-center space-x-4">
+                  <div className="p-2 rounded-full bg-background w-fit h-fit">
+                    <MapPin className="text-foreground" />
+                  </div>
+                  <div>
+                    <p className="font-bold text-foreground">Address</p>
+                    <p className="text-muted-foreground">
+                      123 Blockchain Avenue, Tech City, Innovation State 12345
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                    <label className="block my-2">Phone (optional)</label>
-                    <input
-                    type="text"
-                    name="phone"
-                    placeholder="(123) 456-7890"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full p-2 px-3 border border-[#E4E4E7] rounded-md"
-                    />
-                </div>
-                <div>
-                    <label className="block my-2">Subject</label>
-                    <select
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className="w-full p-2 px-3 border border-[#E4E4E7] rounded-md"
-                    required
-                    >
-                    <option value="">Select a subject</option>
-                    <option value="support">Support</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="inquiry">General Inquiry</option>
-                    </select>
-                </div>
-            </div>
-
-            
-
-            <div>
-                <label className="block my-2">Message</label>
-                <textarea
-                name="message"
-                placeholder="How can we help you?"
-                value={formData.message}
-                onChange={handleChange}
-                className="w-full p-2 px-3 border border-[#E4E4E7] rounded-md h-28"
-                required
-                >
-
-                </textarea>
-            </div>
-
-            
-
-            <button type="submit" className="w-full bg-black text-white p-3 rounded-md hover:bg-gray-800">
-              Submit
-            </button>
-          </form>
-        </div>
-
-        {/* Right: Contact Information & FAQ */}
-        <div className="space-y-6">
-          <div className="bg-white p-6 rounded-lg shadow">
-            <h2 className="text-xl font-semibold mb-4">Contact Information</h2>
-            <p className="text-[#71717A]">Reach out to us through any of these channels</p>
-            <div className="flex space-x-3 my-3">
-                <div className="p-2 rounded-full bg-gray-100 w-fit h-fit">
-                    <Mail />
-                </div>
-                <div className="text-[#71717A]">
-                    <p className="font-bold text-black">
-                    Email
-                    </p>
-                    <p>
-                    info@harmony.com
-                    </p>
-                    <p>
-                    support@harmony.com
-                    </p>
-                </div>
-            </div>
-            <div className="flex space-x-3 my-3">
-                <div className="p-2 rounded-full bg-gray-100 w-fit h-fit">
-                    <Phone />
-                </div>
-                <div className="text-[#71717A]">
-                    <p className="font-bold text-black">
-                    Phone
-                    </p>
-                    <p>
-                    +1 (555) 123-4567
-                    </p>
-                    <p>
-                    Mon-Fri: 9am-5pm EST
-                    </p>
-                </div>
-            </div>
-
-            <div className="flex space-x-3 my-3">
-                <div className="p-2 rounded-full bg-gray-100 w-fit h-fit">
-                    <MapPin />
-                </div>
-                <div className="text-[#71717A]">
-                    <p className="font-bold text-black">
-                    Office
-                    </p>
-                    <p>
-                    123 Blockchain Avenue
-                    </p>
-                    <p>
-                    Suite 456
-                    </p>
-                    <p>
-                    San Francisco, CA 94105
-                    </p>
-                </div>
-            </div>
-            
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow">
-            <h2 className="text-xl font-semibold mb-1">Frequently Asked Questions</h2>
-            <p className="mb-6 text-[#71717A] text-sm">Quick answers to common questions</p>
-            <div className="mb-2">
-              <p className="font-semibold">How does blockchain verify property ownership?</p>
-              <p className="text-[#71717A] text-sm">
-                Harmony uses the Stellar blockchain to create immutable records of property ownership.
-              </p>
+          {/* FAQ Section */}
+          <section className="mt-16">
+            <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+            <div className="max-w-4xl mx-auto space-y-4">
+              {/* FAQ Items */}
+              <div className="bg-secondary p-6 rounded-lg shadow">
+                <h3 className="text-xl font-semibold mb-2">How does Harmony use blockchain?</h3>
+                <p className="text-muted-foreground text-sm">
+                  We use Stellar blockchain to record and verify property transactions, 
+                  ensuring transparency, security, and immutability of records.
+                </p>
+              </div>
+
+              <div className="bg-secondary p-6 rounded-lg shadow">
+                <h3 className="text-xl font-semibold mb-2">Is my data secure?</h3>
+                <p className="text-muted-foreground text-sm">
+                  Absolutely. We implement multi-factor authentication and advanced 
+                  encryption to protect your personal and transaction data.
+                </p>
+              </div>
+
+              <div className="bg-secondary p-6 rounded-lg shadow">
+                <h3 className="text-xl font-semibold mb-2">What regions do you support?</h3>
+                <p className="text-muted-foreground text-sm">
+                  Harmony supports international real estate transactions, 
+                  with a growing network of verified properties across multiple countries.
+                </p>
+              </div>
             </div>
-            <div className="mb-2">
-              <p className="font-semibold mt-3">Is Harmony available internationally?</p>
-              <p className="text-[#71717A] text-sm">
-                Yes, Harmony supports international property transactions with compliance for various regulations.
-              </p>
-            </div>
-            <div className="mb-2">
-              <p className="font-semibold mt-3">How do I list my property on Harmony?</p>
-              <p className="text-[#71717A] text-sm">
-              Create an account, verify your identity, and follow our simple listing process to add your
-              property to our blockchain-secured marketplace.
-              </p>
-            </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
