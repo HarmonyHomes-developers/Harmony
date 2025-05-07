@@ -36,11 +36,11 @@ export default function KeyFeatures() {
   ];
 
     return (
-      <div className="w-full min-h-screen bg-white flex flex-col md:justify-center items-center px-6 py-12">
-        <h1 className="text-black font-bold text-2xl md:text-4xl mb-2 text-center">
+      <div className="w-full min-h-screen bg-background text-foreground flex flex-col md:justify-center items-center px-6 py-12">
+        <h1 className="font-bold text-2xl md:text-4xl mb-2 text-center">
           Key Features
         </h1>
-        <p className="text-[#71717A] texl-[0.625rem]  md:text-xl text-center mb-8 max-w-3xl">
+        <p className="text-muted-foreground text-[0.625rem] md:text-xl text-center mb-8 max-w-3xl">
           Harmony provides a comprehensive suite of tools for modern real estate transactions.
         </p>
   
@@ -59,8 +59,8 @@ function KeyFeatureCard({ icon, title, descrption }: KeyFeatureCardProp) {
   return (
     <div className="w-full h-fit flex flex-col items-start">
       <Image src={icon} alt={title} width={40} height={40} quality={90} className='md:w-fit md:h-fit w-[1.25rem] h-[1.25rem]' />
-      <p className="my-4 font-bold text-[1rem] md:text-xl text-black">{title}</p>
-      <p className="text-base text-[#71717A]">{descrption}</p>
+      <p className="my-4 font-bold text-[1rem] md:text-xl">{title}</p>
+      <p className="text-base text-muted-foreground">{descrption}</p>
     </div>
   );
 }
