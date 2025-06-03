@@ -1,6 +1,6 @@
 import React from 'react';
-import Sidebar from '@/components/seller/sidebar';
-import MainContent from '@/components/seller/MainContent';
+import Sidebar from '@/components/organisms/sidebar';
+import MainContent from '@/components/organisms/main-content';
 import Header from '@/components/organisms/navbar';
 
 const SellerDetailPage: React.FC = () => {
