@@ -16,9 +16,9 @@ export default function Hero() {
                     blockchain technology.
                 </p>
                 <div className="flex items-center justify-center gap-4 mt-3">
-                    <button className="text-sm font-medium text-white py-3 px-8 rounded-lg bg-primary hover:bg-primary-hover cursor-pointer transition-colors duration-200 ease-in-out">
+                    <Link href="/catalogue"><button className="text-sm font-medium text-foreground py-3 px-8 rounded-lg bg-card cursor-pointer border-[1px] border-border hover:bg-card-foreground hover:text-background transition-colors duration-200 ease-in-out">
                         Browse Properties
-                    </button>
+                    </button></Link>
                     <Link href="/signup">
                       <button className="text-sm font-medium text-foreground py-3 px-8 rounded-lg bg-card cursor-pointer border-[1px] border-border hover:bg-card-foreground hover:text-background transition-colors duration-200 ease-in-out">
                         Create Account
