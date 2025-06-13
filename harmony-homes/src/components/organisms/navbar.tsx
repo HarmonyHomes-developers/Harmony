@@ -20,7 +20,9 @@ const Header = () => {
       <div className="flex flex-col w-[90%] p-4">
         <div className="flex items-center w-full">
           <div className='h-10 w-36'>
-            <Image src="/svgs/logo.svg" className='!relative' alt='logo' fill />
+            <Link href="/">
+              <Image src="/svgs/logo.svg" alt="logo" fill className="!relative" />
+            </Link>
           </div>
 
           {/* Navigation Links - Desktop */}
